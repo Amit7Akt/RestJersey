@@ -1,0 +1,17 @@
+package com.jersey.project.home.resources;
+import com.jersey.project.home.service.MessageService;
+
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.core.MediaType;
+
+public class MyResources {
+	
+	MessageService msg = new MessageService();
+	
+	@GET
+	@Produces(MediaType.TEXT_PLAIN)
+	public List<MessageService>resourcemethods() {
+		return msg.messages();
+	}
+}

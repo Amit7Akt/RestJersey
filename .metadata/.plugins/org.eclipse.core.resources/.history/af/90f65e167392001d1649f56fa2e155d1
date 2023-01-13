@@ -1,0 +1,13 @@
+package com.jersey.project.home;
+
+import java.awt.PageAttributes.MediaType;
+
+@Path("messages")
+public class MyResources {
+	
+	@Get
+	@Produces(MediaType.TEXT_PLAIN)
+	public String resourcemethods() {
+		return "amit";
+	}
+}

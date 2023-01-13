@@ -1,0 +1,5 @@
+package com.jersey.project.home.model;
+
+public class Message {
+
+}
